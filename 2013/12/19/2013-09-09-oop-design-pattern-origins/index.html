@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Paper: OOP Design Pattern Origins | Grassroots Web Development</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="2013-12-19-Paper-Design-Patterns.md Design patterns are recognizable class structures used in programming, that when used in appropriate groupings, help programmers resolve computing problems;  Recogn">
+<meta name="keywords" content="Java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Paper: OOP Design Pattern Origins">
+<meta property="og:url" content="http://johnmcerlain.com/2013/12/19/2013-09-09-oop-design-pattern-origins/index.html">
+<meta property="og:site_name" content="Grassroots Web Development">
+<meta property="og:description" content="2013-12-19-Paper-Design-Patterns.md Design patterns are recognizable class structures used in programming, that when used in appropriate groupings, help programmers resolve computing problems;  Recogn">
+<meta property="og:updated_time" content="2016-04-26T14:44:40.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Paper: OOP Design Pattern Origins">
+<meta name="twitter:description" content="2013-12-19-Paper-Design-Patterns.md Design patterns are recognizable class structures used in programming, that when used in appropriate groupings, help programmers resolve computing problems;  Recogn">
+  
+    <link rel="alternate" href="/atom.xml" title="Grassroots Web Development" type="application/atom+xml">
+  
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/css/styles.css">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-66002900-3', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+</head>
+
+<body>
+  <div class="blognav" style="text-align: center;">
+  <span class="display-4 text-sm-center">
+  <button onclick="location.href='/'"type="button" class="btn btn-outline-success btn-lg">HOME</button>
+  <button onclick="location.href='/archives'"type="button" class="btn btn-outline-success btn-lg">BLOG</button>
+  
+<div class="btn-group">
+  <button type="button" class="btn btn-outline-success btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    GRASSROOTS
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="/">Grassroots Web Development</a>
+    <a class="dropdown-item" href="http://bucketminimalist.com"target="_blank">Bucket MinimaList</a>
+    <a class="dropdown-item" href="http://randextrader.com"target="_blank">RandexTrader</a>
+  </div>
+</div>
+  <button onclick="location.href='/about'"type="button" class="btn btn-outline-success btn-lg">ABOUT</button>
+  <button onclick="location.href='/contact'"type="button" class="btn btn-outline-success btn-lg">CONTACT</button>
+      <button onclick="location.href='/getstarted'"type="button" class="btn btn-success btn-lg">
+     Get Started</button> 
+  </span>
+</div>
+    <div class="row">
+        <div class="col-sm-1 leftside">
+          <ul>
+           <li><a href="/"><img src="/images/logo-lg.png" alt="logo"></img></a></li>
+            <li><a href="https://www.facebook.com/sharer/sharer.php?u=#url" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://api.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>            
+            <li><a href="http://twitter.com/share" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="http://plus.google.com/share" target="_blank"><i class="fa fa-google-plus"></i> </a></li>
+          </ul>
+        </div>
+      <div class="container">
+        <div class="row">
+		
+          <div class="main-header">
+            <div class="blog-header">
+  <h3 class="blog-title">Grassroots Web Development</h3>
+  
+</div>
+
+          </div>
+          <div class="col-sm-8 blog-main">
+            <article id="post-2013-09-09-oop-design-pattern-origins" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h1 class="article-title" itemprop="name">
+      Paper: OOP Design Pattern Origins
+    </h1>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2013/12/19/2013-09-09-oop-design-pattern-origins/" class="article-date"><time datetime="2013-12-19T19:20:02.000Z" itemprop="datePublished">2013-12-19</time></a>
+</div>
+
+    
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/College-Relics/">College Relics</a>
+  </div>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>2013-12-19-Paper-Design-Patterns.md<br> Design patterns are recognizable class structures used in programming, that when used in appropriate groupings, help programmers resolve computing problems;  Recognizing and understanding design patterns help programmers cope with abstraction at the extreme level.  They give programmers a vocabulary of phrases to describe the complex relationships between classes.  The term “design patterns” was coined by four men, Erich Gamma, Richard Helm, Ralph Johnson and John Vlissides also known as the “The Gang of Four “, or “Go4”.  Their definition of design patterns was written in their collaborative book, “Design Patterns”:  “Design patterns represent solutions to problems that arise when developing software within a particular context” (1).  Our textbook, Objects First With BlueJ, defines a design pattern as “a description of a common computing problem and a description of a small set of classes and their interaction structure that helps to solve the problem”(2) .   As one gains experience in programming, certain techniques are developed and certain programming constructs reappear as solutions to new problems.<br>     It should be noted that when the now famous book of The Gang of Four (Gof4) was published in 1995, Java was in its infancy.  The book applies itself to Object Oriented Design (as opposed to programming) and often references C++ and Smalltalk.  Remarkably, now almost 20 years since the original print, the concept of design patterns are still not only valid, but still widely used; and they are just as applicable to the Java language as they are to C++.  In fact, in the evolution of the Java language, some design pattern methodology has been incorporated into the Java language structure such as the concepts of ‘implementation’ and ‘interface’.  Since 1995, the book has been reprinted over 40 times with little modification.<br>       Before design patterns are considered for a particular program, the classes for the program must be determined.  According to our text book, “deciding what classes to use to implement a solution to a problem can be one of the most difficult tasks”.  In regard to “inexperienced programmers” it also states, “Doing the initial design is seen as… annoying and people cannot wait to get it over with so that the “real work” can start.  This is a very misguided picture”.  It goes on to show methodology using ‘Class/Responsibilities/Collaborators (CRC) cards to illuminate the interactions between classes.  The ‘class’, of course, specifies the object.  The ‘responsibilities’ are the things that object is accountable for.  The ‘collaborators’ are the other classes that the object references.  Though system design is beyond the scope of this course and project, it is mentioned as a necessary prelude to incorporating design patterns into a program. Class and program design is the foundational layer upon which the application is created.  Our course helps us formulate the concept of CRC by grouping classes with United Modeling Language (UML).  This is a good way of thinking about design patterns. A design pattern is a grouping of classes that can do a variety of things.  By understanding these groupings, programmers can communicate more effectively with each other when designing programs.<br>       The Go4 based the concept of design patterns on the writings of an architect, Christopher Alexander.  Alexander is quoted as saying “Each pattern describes a problem which occurs over and over again in our environment, and then describes the core of the solution to that problem, in such a way that you can use this solution a million times over, without ever doing it the same way twice”.  He was referring to buildings and towns.  The Go4 contends the same applies to object oriented design, except that “Our solutions are expressed in terms of objects and interfaces instead of walls and doors”(1).  “At the core of both kinds of patterns is a solution to a problem in a context”(1).<br>     Understanding Design Patterns facilitate our dealings with ‘abstraction’.  The authors have identified twenty-three unique, but sometimes interrelated design patterns.  All of them are identified by purpose and scope.  As stated, the main purpose in programming is to solve computing problems.  However, the purpose of a particular design pattern, is abstracted from this process.  There is never a design pattern that can be copied from one application and plugged into another to resolve an issue.  In this way, design patterns can be regarded within the concept of ‘coupling’; intangible and subjective.  A design pattern should be viewed more as a tool that may be applied in a certain circumstance and may (or may not) help resolve an issue.  In this regard it is similar to “toolkits” which are reusable classes, found in various class libraries, which provide general purpose functionality.  However, the “purpose” of a design pattern is discussed in the context of designing objects and classes to work together toward a specific objective.<br>       All twenty three patterns are categorized under only one of three main purposes:  Creational, Structural, or Behavioral.  Within each of these three categories, they are further divided into “scope”; that is, whether the pattern focuses more on class or object creation, object structure or object behavior; or a focus on the instance of the class being the object’s  creation, object’s structure or object’s behavior.  Nineteen of the twenty-three patterns focus on the object.<br>       Briefly, the three main categories are explained as follows:<br>Creational:   these are mechanisms, which attempt to create objects tailored to a given situation.  Introducing new objects into a system can pose risk to the integrity of that system.  Creational design patterns control object creation and therefore the risk.<br>Includes:  Factory method, Builder; Prototype; and Singleton; </p>
+<p>Structural:  these patterns define relationships among objects and classes; they build and develop the hierarchical inheritance patterns; they identify simple ways to realize relationships between entities.<br>Includes:  Adapter; Bridge; Composite; Decorator; Facade; Flyweight; Proxy;</p>
+<p>Behavioral:  these design patterns identify common communication patterns between objects and realize by doing so, they increase flexibility in carrying out this communication.<br>Include: Interpreter; Chain of responsibility; Command; Interpreter;  Iterator;  Mediator;  Memento; Observer; State; Strategy; Template method; Visitor.</p>
+<pre><code>Before launching into a discussion of the categories and how design patterns solve design problems, it is important to understand the complexity of object oriented programming.  The data structures derived from (even) simple class structures can become complicated fast.  A compiler builds a graph to represent relationships between classes and objects; connections are represented by the possibility of a method of one class calling a method from another class(5).  The graph would be quite simple if the program consisted of just a few classes such as that of a parking meter program, a music player system or a bouncing ball program.  But what happens when the program is very large consisting of hundreds, or thousands of inter-related objects, many influencing each other?  The compiler graph becomes very complex.  It references object data.  It also stores the relationships among methods that operate upon the data.  If code is written whereby one class calls another, the compiler will substantiate this only if the graphical representation supports it.  
+  The dilemma for programmers becomes one of dealing with the complexity as they try to fathom a solution for their application.  As we have learned, the issue of abstraction, itself quite complex, aids programmers on several levels.  First of all, it breaks down large complex tasks into smaller, more manageable tasks.  Fundamentally, design patterns do the same.  They provide names for certain class and object interactions so we as programmers can discuss projects with one another.
+Design patterns solve design problems.  This is done by determining what objects to use, determining object implementation and/or object interfaces, and therefore developing reusable code that also accounts for future change in program functionality.  These objectives may appear overwhelmingly complex, and the Gof4 defines two principles to aid the process.  The first of these involves inheritance and states &quot;program to the interface, not (to) an implementation&quot;.  The second of the main principles involves object composition and states &quot;Favor object composition over class inheritance&quot;.
+  To understand the first of these principles, one must understand the concept of &quot;interface&quot; which itself has rapidly evolved over the past decade with multiple meanings.  The principle refers to the original, most fundamental meaning, &quot;The set of all signatures defined by an object&apos;s operations (methods).  The interface describes the set of requests to which an object can respond&quot;.  This is nothing more than hierarchizing classes, either by means of inheritance or by means of utilizing a Java &apos;interface&apos;, or by means of utilizing  the Java &quot;implements&quot; keyword implementing a unique class that brings unrelated classes together into one interface.  &quot;Programming to an implementation can cause problems and more work when the class is redesigned or removed leaving the implementation &quot;dangling&quot; causing an error message.&quot;  Therefore, when using inheritance, it is generally good methodology to &quot;program to the interface&quot;.
+Here is an example of programming to an interface versus to an implementation:
+</code></pre><p>public static void main(String… args) {<br>  // do this - declare the variable to be of type Set, which is an interface<br>  Set buddies = new HashSet();<br>  // don’t do this - you declare the variable to have a fixed type<br>  HashSet buddies2 = new HashSet();<br>} (6).<br>     As can be seen from above, if the collection had to be changed from a HashSet to a LinkeedHashSet, then not only would the variable, buddies2 have to be changed to LinkedHashSet buddies2 = new LinkedHashSet(), but all the return types of all the methods of the “Buddy” class.  “Reuse by inheritance makes it easier to make new components that can be composed with older ones”.<br>     Inheritance works hand-in-hand with object composition and therefore the second principle, “Favor object composition over class inheritance”.  In so doing, the program will have fewer classes and more objects.  The system’s behavior will depend more on object interaction instead of class definitions.  This underlying concept of design patterns also facilitates “reusability” of the code and designing for change.<br>     In fact, it is a central theme for experienced programmer’s to have the mindset to design a program that is flexible, and can conform and evolve to future changes.  This is where specific design patterns can be named to address specific design issues. For instance, in the example of the LinkedHashSet above, three specific design patterns help the programmer NOT specify a class explicitly.  They are “Abstract Factory”, Factory Method” and “Prototype”.  To help avoid situations of hard coding requests, a programmer would consider “Chain of Responsibility” and “Command”.  To avoid cases of tight coupling, the programmer would consider “Abstract Factory”, “Bridge”, “Chain of Responsibility”, “Command”, “Facade”, “Mediator”, and/or “Observer”.  In cases where algorithms are used and likely to be modified, patterns to consider would be “Builder”, “Iterator”, “Strategy”, “Template Method”, and/or “Visitor”.  When one is using a class library and cannot access the source code, design patterns including “Adapter”, “Decorator”, and “Visitor” offer ways to modify classes.<br>       There are guidelines to use when selecting a pattern.  At the very minimum when considering a design pattern to integrate into your project, one must consider the name of the pattern, the problem description, the solution description and the consequences of using one pattern versus another pattern(2).  For more detailed information, the catalog of design patterns will provide additional information such as the applicability of the pattern, the UML structure (somewhat similar to BlueJ), the participants, collaborations, consequences, implementation, sample code, known uses and related patterns.<br>       As ubiquitous as the concept has become, the concept has its detractors.  During the Object-Oriented Programming, Systems, Languages &amp; Applications (OOPSLA) Conference of 1999, the Go4 was charged with “numerous crimes against computer science” and “convicted” by 2/3s of the “jurors” who attended the “trial”, though it is unclear what the sentence was. Clearly, coders have a large pattern of humor.  The verdict: Patterns are through the “hype cycle”.  The GOF design patterns are no longer blindly touted as useful everywhere, but instead are seen as part of the designer’s toolbox, to be understood and used where appropriate.  Peter Norvig provides a similar argument. He demonstrates that 16 out of the 23 patterns in the Design Patterns book (which is primarily focused on C++) are simplified or eliminated (via direct language support) in Lisp or Dylan.  (4)  It should also be noted that since 1995, and the writing of “Design Patterns”, the Java language has included “interface” as part of the language:  A (Java) programming language keyword used to define a collection of method definitions and constant values.  It can later be implemented by classes that define this interface with the “implements” keyword.  Some of the most important Java interfaces are “Collection”, “Iterator”, “List”, “Map”, and “Set”.<br>       My interest in this topic was to gain a foothold in Java as fast as possible.  Since design patterns are the lingo used by programmers, I figured that learning some of the essential core lingo as a newbie Object oriented student might help get me up to speed faster as a pro active learner of the subject.  One can only imagine what the programming language “Java”, or its successor will be like in 100 years. Massive servers would be needed to store an unfathomable number of classes and methods developed through-out the 21st century. Programmers will work at a level of abstraction that we can’t begin to understand with our “primitive” mindsets.  If Object Oriented Programming is difficult to learn now, how will students crack coding in the future?  The answer to this question is answered in part by the process of abstraction and use of design patterns.</p>
+<p>References:<br>1.) Gamma, Erich; Helm,Richard; Johnson,Ralph; Vlissides.  “Design Patterns.” Addison-Wesley 1995.<br>2.) Barnes,David; Kolling,Michael; “Objects First With Java”.  Pearson, Fifth Edition.<br>3.)  <a href="http://www.alexandercowan.com/mvc-model-view-controller-overview/" target="_blank" rel="external">http://www.alexandercowan.com/mvc-model-view-controller-overview/</a></p>
+<p>4.)  <a href="http://sourcemaking.com/design_patterns" target="_blank" rel="external">http://sourcemaking.com/design_patterns</a></p>
+<p>5.)   <a href="http://www.cs.cmu.edu/~adamchik/21-127/lectures/graphs_1_print.pdf" target="_blank" rel="external">http://www.cs.cmu.edu/~adamchik/21-127/lectures/graphs_1_print.pdf</a>.  </p>
+<p>6)  <a href="http://stackoverflow.com/questions/3194278/should-you-always-code-to-interfaces-in-java" target="_blank" rel="external">http://stackoverflow.com/questions/3194278/should-you-always-code-to-interfaces-in-java</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      <a data-url="http://johnmcerlain.com/2013/12/19/2013-09-09-oop-design-pattern-origins/" data-id="cj7l83lub000h7kv9xvow7fj1" class="article-share-link">
+        <i class="fa fa-share"></i> Share
+      </a>
+      
+        <a href="http://johnmcerlain.com/2013/12/19/2013-09-09-oop-design-pattern-origins/#disqus_thread" class="article-comment-link">
+          <i class="fa fa-comment"></i> Comments
+        </a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+    
+<ul id="article-nav" class="nav nav-pills nav-justified">
+  
+  <li role="presentation">
+    <a href="/2013/12/15/2013-09-09-java-glossary/" id="article-nav-older" class="article-nav-link-wrap">
+      <i class="fa fa-chevron-left pull-left"></i>
+      <span class="article-nav-link-title">Java Glossary</span>
+    </a>
+  </li>
+  
+  
+  <li role="presentation">
+    <a href="/2014/02/01/2014-02-01-The-Manifestation-of-Future-Websites/" id="article-nav-newer" class="article-nav-link-wrap">
+      <span class="article-nav-link-title">The Manifestation of Future Websites</span>
+      <i class="fa fa-chevron-right pull-right"></i>
+    </a>
+  </li>
+  
+</ul>
+
+
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+
+
+          </div>
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          
+  <div class="sidebar-module sidebar-module-inset">
+  <h4>About</h4>
+    <img src="/images/pptiny.jpg"></img>
+  <p>The short version--I am an entrepreneur enthusiastic about developing real time web applications that will change the world. The long version-- <a href="/about"> continue</a></p>
+</div>
+
+
+  
+  <div class="sidebar-module">
+    <h4>Categories</h4>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Bucket-Minimalist/">Bucket Minimalist</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/College-Relics/">College Relics</a><span class="sidebar-module-list-count">73</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Grassroots-Web-Development/">Grassroots Web Development</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/RandexTrader/">RandexTrader</a><span class="sidebar-module-list-count">3</span></li></ul>
+  </div>
+
+
+
+  
+  <div class="sidebar-module">
+    <h4>Tags</h4>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Communications-and-Networks/">Data Communications and Networks</a><span class="sidebar-module-list-count">13</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Structures-and-Algorithms/">Data Structures and Algorithms</a><span class="sidebar-module-list-count">8</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Discrete-Math/">Discrete Math</a><span class="sidebar-module-list-count">8</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Human-Computer-Interaction/">Human Computer Interaction</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Java/">Java</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Jekyll-Website/">Jekyll Website</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Micro-computer-Apps/">Micro-computer Apps</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Operating-Systems/">Operating Systems</a><span class="sidebar-module-list-count">12</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Probability-Trading/">Probability Trading</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/RandexTrader/">RandexTrader</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Engineering/">Software Engineering</a><span class="sidebar-module-list-count">10</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/The-Random-Trader/">The-Random-Trader</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Website-Development/">Website Development</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/cloud/">cloud</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/zPost-Degree-General-Study/">zPost Degree General Study</a><span class="sidebar-module-list-count">1</span></li></ul>
+  </div>
+
+
+
+  
+  <div class="sidebar-module">
+    <h4>Tag Cloud</h4>
+    <p class="tagcloud">
+      <a href="/tags/Data-Communications-and-Networks/" style="font-size: 20px;">Data Communications and Networks</a> <a href="/tags/Data-Structures-and-Algorithms/" style="font-size: 15.71px;">Data Structures and Algorithms</a> <a href="/tags/Discrete-Math/" style="font-size: 15.71px;">Discrete Math</a> <a href="/tags/Human-Computer-Interaction/" style="font-size: 14.29px;">Human Computer Interaction</a> <a href="/tags/Java/" style="font-size: 12.86px;">Java</a> <a href="/tags/Jekyll-Website/" style="font-size: 10px;">Jekyll Website</a> <a href="/tags/Micro-computer-Apps/" style="font-size: 10px;">Micro-computer Apps</a> <a href="/tags/Operating-Systems/" style="font-size: 18.57px;">Operating Systems</a> <a href="/tags/Probability-Trading/" style="font-size: 10px;">Probability Trading</a> <a href="/tags/RandexTrader/" style="font-size: 11.43px;">RandexTrader</a> <a href="/tags/Software-Engineering/" style="font-size: 17.14px;">Software Engineering</a> <a href="/tags/The-Random-Trader/" style="font-size: 10px;">The-Random-Trader</a> <a href="/tags/Website-Development/" style="font-size: 12.86px;">Website Development</a> <a href="/tags/cloud/" style="font-size: 10px;">cloud</a> <a href="/tags/zPost-Degree-General-Study/" style="font-size: 10px;">zPost Degree General Study</a>
+    </p>
+  </div>
+
+
+  
+  <div class="sidebar-module">
+    <h4>Archives</h4>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2017/09/">September 2017</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2017/06/">June 2017</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2015/07/">July 2015</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2015/06/">June 2015</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2015/05/">May 2015</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2015/04/">April 2015</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2015/03/">March 2015</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2015/02/">February 2015</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2015/01/">January 2015</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2014/12/">December 2014</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2014/11/">November 2014</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2014/10/">October 2014</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2014/09/">September 2014</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2014/08/">August 2014</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2014/07/">July 2014</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2014/06/">June 2014</a><span class="sidebar-module-list-count">12</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2014/05/">May 2014</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2014/04/">April 2014</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2014/03/">March 2014</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2014/02/">February 2014</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2013/12/">December 2013</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2013/11/">November 2013</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2013/10/">October 2013</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2013/09/">September 2013</a><span class="sidebar-module-list-count">4</span></li></ul>
+  </div>
+
+
+
+  
+  <div class="sidebar-module">
+    <h4>Recents</h4>
+    <ul class="sidebar-module-list">
+      
+        <li>
+          <a href="/2017/09/09/Occupy-Wall-Street-With-RandexTrader!/">Occupy Wall Street with RandexTrader!</a>
+        </li>
+      
+        <li>
+          <a href="/2017/06/28/Passion-Igniting-Possibility/">Passion Igniting Possibility</a>
+        </li>
+      
+        <li>
+          <a href="/2017/06/23/Start-Your-Bucket-Minimalist-Now/">Start Your Bucket Minimalist Now</a>
+        </li>
+      
+        <li>
+          <a href="/2015/07/17/2015-07-17-IT-Jobs-in-the-Cloud/">IT Jobs in the Cloud</a>
+        </li>
+      
+        <li>
+          <a href="/2015/06/26/2015-06-26-Object-Oriented-Self-Awareness/">Object Oriented Self Awareness</a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+
+        </div>
+    </div>
+  </div>
+  </div>
+      <!-- footer-->
+    <!-- BEGIN PRE-FOOTER-->
+    <div class="pre-footer">
+        <div class="container">
+            <div class="row">
+                <!-- BEGIN BOTTOM ABOUT BLOCK-->
+                <div class="col-md-4 col-sm-6 pre-footer-col">
+                    <h2><font color="white">About</font></h2>
+                    <p>
+                        John McErlain develops trading software and real time applications as he travels in The USA, sometimes Canada, maybe Mexico. <br/>
+                        <br/>RandexTrader is automated trading software introduced in 2016.
+                    </p>
+                </div>
+                <!-- END BOTTOM ABOUT BLOCK-->
+                <!-- BEGIN BOTTOM CONTACTS-->
+                <div class="col-md-4 col-sm-6 pre-footer-col">
+                    <h2><font color="white">Contact</font></h2>
+                    <address class="margin-bottom-40">
+                        John McErlain<br/>
+                        Somewhere, USA<br/>
+                        Phone: 585-755-2911<br/>
+                        Email: <a href="mailto:johnmcerlain001@gmail.com">johnmcerlain001@gmail.com</a>
+                        <br/>
+                    </address>
+                </div>
+                <!-- END BOTTOM CONTACTS-->
+                <!-- BEGIN TWITTER BLOCK-->
+                <div class="col-md-4 col-sm-6 pre-footer-col">
+                <br>
+                    <a class="twitter-timeline" data-tweet-limit="1" href="https://twitter.com/RandexTrader" data-widget-id="725310579943034880">Tweets by @RandexTrader</a>
+                    <script>
+                        !function(d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                            if (!d.getElementById(id)) {
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = p + "://platform.twitter.com/widgets.js";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }
+                        }(document, "script", "twitter-wjs");
+                    </script>
+                </div>
+                <!-- END TWITTER BLOCK-->
+            </div>
+        </div>
+    </div>
+    <!-- END PRE-FOOTER-->
+    <!-- BEGIN FOOTER-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- BEGIN COPYRIGHT-->
+                <div class="col-md-6 col-sm-6 padding-top-10">
+                    © 2016 John McErlain Software Developer<br/>
+                    <a href="javascript:;">Privacy Policy</a>
+                    <a href="javascript:;">Terms of Service</a>
+                </div>
+                <!-- END COPYRIGHT-->
+                <!-- BEGIN SOCIAL-->
+                <div class="col-sm-6">
+                    <ul class="list-inline pull-right">
+                        <li>
+                            <a href="https://github.com/johnmcerlain">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/RandexTrader">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/johnmcerlain">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/in/johnmcerlain">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- END SOCIAL-->
+            </div>
+        </div>
+    </div>
+    <!-- END FOOTER-->
+    <!--<p class="foot text-xs-center">Randextrader copyright here</p>-->
+    <!-- jQuery first, then Tether, then Bootstrap JS.-->
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> 
+  
+<script>
+  var disqus_shortname = 'johnmcerlain-com';
+  
+  var disqus_url = 'http://johnmcerlain.com/2013/12/19/2013-09-09-oop-design-pattern-origins/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" integrity="sha384-8gBf6Y4YYq7Jx97PIqmTwLPin4hxIzQw5aDmUg/DDhul9fFpbbLcLh3nTIIDJKhx" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+
+<script src="/js/script.js"></script>
+
+</body>
+</html>

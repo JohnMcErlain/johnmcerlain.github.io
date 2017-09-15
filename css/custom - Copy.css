@@ -1,0 +1,419 @@
+/**
+ * Custom Bootstrap and Theme Overrides
+ *
+ * Bootstrap designers: Feel free to remove all of the styles in this
+ * file to start a fresh new design. Most of the critical/functional
+ * styles are found within the other CSS files, with this one included last.
+ *
+ * Bootstrap and Hexo markdown style overrides would typically happen here.
+ */
+
+/* Globals */
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #555;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0em;
+  margin-bottom: 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+};
+
+p {
+  margin: 0 0 15px;
+}
+
+code {
+  background-color: #eeeeee;
+  font-size: 80%;
+}
+/*div {
+  display:flex;
+  align-items:center;
+  margin-top:auto; 
+  margin-bottom:auto;
+  }*/
+
+.fa { margin-right: 0.25em; }
+
+/* Buttons */
+.btn {
+  border-radius: 30px;
+}
+.btn-primary {
+  background-color: #428bca;
+  border-color: #337ab7;
+}
+.nav-pills>li>a {
+  border-radius: 30px;
+}
+
+/* Override Bootstrap's default container width */
+@media (min-width: 1200px) {
+  /*.container {
+    width: 1030px;
+  }*/
+}
+/*
+
+/*
+ * Masthead for nav
+ */
+.blognav {
+  background-color: #f5f5f0;
+  /*background-image: url('/images/blognav-bg.png');*/
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+};
+.navbar {
+  /*background-color: #d1e0e0;*/
+  background-image: url('/images/sky-bg.png');
+  /*background-image: url('/images/grassbanner.png');*/
+
+}
+
+.navbar-inverse { border: 0; }
+
+.navbar-inverse .navbar-toggle {
+  border-color: #cdddeb;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #cdddeb;
+}
+
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+  background-color: #65A2D6;
+}
+
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav>li>a {
+  color: #cdddeb;
+  font-weight: 500;
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border-color: #cdddeb;
+}
+
+.navbar-inverse .navbar-nav>li>a.active {
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 0;
+    min-height: 80px;
+  }
+
+  The following may need modification depending on
+      the size of your `navbar-brand` (if enabled) 
+  #main-menu-navbar {
+    margin-left: -30px;
+  }
+ .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .navbar-brand {
+
+  }
+.navbar-brand {
+  float: none;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-bottom: 10px;
+  }
+
+.navbar-center
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+  height:100%;
+}
+
+  .navbar-inverse .navbar-nav>li>a.active:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -5px;
+    vertical-align: middle;
+    content: " ";
+    border-right: 5px solid transparent;
+    border-bottom: 0px solid;
+    border-left: 5px solid transparent;
+  }
+}
+
+/*
+ ***********HOME LANDING PAGE *****************
+ */ 
+.homelanding {
+  /*background-image: url('/images/jumbotron-bg.png');*/
+  background-image: url('/images/grassbanner-pp.png');
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+};
+/*
+ ***************SOCIAL MEDIA*****************
+ */
+.leftside{
+  /*background-image: url('/images/navbar-bg.jpg');*/
+ padding-top: 0em;
+ padding-right: 0em;
+}
+  ul {
+	overflow: auto;
+  float: left;
+}
+
+ul li {
+	list-style-type: none;
+  /*padding-bottom: 1px;
+  /*margin-top: 10px;*/
+}
+
+ul li a i {
+	background: #205D7A;
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	font-size: 35px;
+	text-align: center;
+  padding-bottom: 10px;
+  margin-top: 10px;
+	margin-right: 10px;
+	padding-top: 15%;
+}
+.fa-facebook {
+	background:#3b5998
+} 
+.fa-linkedin {
+	background:#007bb6
+}
+.fa-twitter {
+	background:#00aced
+}
+.fa-google-plus {
+	background:#dd4b39
+}
+/*
+ ***********END SOCIAL MEDIA*****************
+ */
+
+
+/*
+ * Blog header and description
+ */
+.blog-header {
+  padding-bottom: 20px;
+}
+
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 60px;
+  font-weight: normal;
+}
+.blog-description {
+  font-size: 20px;
+  color: #999;
+}
+
+/*
+ * Main column and sidebar layout
+ */
+
+.blog-main {
+  font-size: 18px;
+  line-height: 1.5;
+  /*padding: 15px;*/
+  /*margin: 30px;*/
+  /*background-color: #428bca;*/
+}
+.blog-main > article:last-of-type {
+  margin-bottom: 30px;
+}
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+  padding: 15px;
+  margin: 0 -15px 15px;
+}
+.sidebar-module h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.sidebar-module-inset {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 2px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-module-list {
+  padding-left: 20px;
+  list-style: none;
+}
+.sidebar-module-list-child {
+  padding-left: 25px;
+}
+
+
+/*
+ * Blog posts
+ */
+
+.article {
+  margin-bottom: 60px;
+  margin-right: 60px;
+  /*background-color: #fff;*/
+}
+
+.article-header h1 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.article-header h1 a {
+  color: #333;
+}
+.article-header h1 a:hover {
+  color: #23527c;
+  text-decoration: none;
+}
+
+.article-meta {
+  margin-bottom: 20px;
+  color: #999;
+  font-size: 0.9em;
+}
+.article-meta > * {
+  display: inline-block;
+  margin-right: 15px;
+}
+.article-meta a {
+  color: inherit;
+}
+
+.article-entry .article-more-link {
+  margin: 15px 0;
+}
+.article-entry .thumbnail .caption {
+  padding: 0;
+}
+.article-entry>*:last-child {
+  margin-bottom: 15px;
+}
+
+/* article footer content */
+.article-footer {
+  font-size: 0.85em;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+.article-footer:after { /* clearfix */
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+.article-footer a {
+  color: #999;
+  text-decoration: none;
+}
+.article-footer a:hover {
+  color: #666;
+  text-decoration: underline;
+}
+
+/*
+ * Archives
+ */
+
+.archives-wrap {
+  margin-bottom: 30px;
+}
+
+.archive-year-wrap a,
+.archive-article .article-datetime a {
+  color: #333;
+  text-decoration: none;
+}
+
+.archive-article .article-datetime a {
+  color: #999;
+  text-decoration: none;
+}
+
+/*
+ * Pagination
+ */
+#page-nav {
+  text-align: center;
+}
+#page-nav .pagination {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+#page-nav .pagination .active>* {
+  background-color: #428bca;
+  border-color: #428bca;
+}
+#page-nav .pagination>li:last-child>* {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+#page-nav .pagination>li:first-child>* {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+/*
+ * Footer
+ */
+.pre-footer {
+  /*background-image: url('/images/jumbotron-bg.png');*/
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+}
+.footer {
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+};
+
+.blog-footer {
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
